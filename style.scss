@@ -1,0 +1,301 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(235, 234, 234);
+  // max-width: 95%;
+  // padding: 5px;
+  margin: 0 auto;
+}
+
+
+.header {
+  background-color: black;
+  // padding: 1rem;
+}
+.navigation {
+  display: flex;
+  &__heading {
+    color: yellow;
+    flex: 1;
+    margin-left: 6rem;
+    // background-color: yellowgreen;
+    padding: 1rem;
+  }
+  &__container {
+    // color: rgb(245, 245, 125);
+    flex: 1;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+  &__item {
+    flex: 1;
+    padding: 1rem;
+    // align-items: baseline ;
+    // background-color: violet;
+    &:last-child {
+      margin-right: 3rem;
+    }
+  }
+  &__link {
+    color: rgb(248, 248, 188);
+    text-decoration: none;
+    // padding: 1rem;
+    // text-align: end;
+  }
+  &__link:hover {
+    color: black;
+    background-color: yellow;
+    padding: 1rem;
+  }
+}
+
+.heading {
+ z-index: 1;
+  // background-color: yellow;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.541), rgba(49, 16, 16, 0.781)),
+    url(/img/pexels-photo-3049234.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: 55vh;
+  position: relative;
+
+  &__container {
+    color: white;
+    min-width: 50%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    // margin: 0 auto;
+    // background-color: turquoise;
+    line-height: 2rem;
+  }
+  &__h1 {
+    font-weight: 100;
+    word-spacing: 1rem;
+    letter-spacing: 0.2rem;
+    &-span {
+      color: yellow;
+    }
+  }
+  &__para {
+    letter-spacing: 0.2rem;
+  }
+  &__button {
+    margin-top: 1.5rem;
+  }
+  &__link {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 0, 0.521);
+    padding: 1rem;
+    border: 1px solid rgba(255, 255, 0, 0.856);
+  }
+  &__button:hover {
+    transform: translateY(-0.1rem);
+  }
+  &__button:active {
+    transform: translateY(0.1rem);
+  }
+}
+
+.city{
+
+ &__container{
+  max-width: 85%;
+  margin: 0 auto;
+  // background-color: springgreen;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  // z-index: 2000;
+
+ }
+ &__card{
+flex: 1;
+max-width: 30%;
+min-height: 60vh;
+background-size: cover;
+background-position: center;
+background-blend-mode: color;
+box-shadow: 0 10px 20px rgb(10, 10, 10);
+  &-1{
+   background-image: linear-gradient(yellow,yellow), url(/img/pexels-photo-211157.jpeg);
+   // background-size: cover;
+   // background-color: tomato;
+  }
+  &-2{
+   background-image:url(/img/woods-landscape-road-loyalsock-state-forest-163703.jpeg);
+   // background-size: cover;
+   // background-color: tomato;
+
+  }
+  &-3{
+   background-image: url(/img/pexels-photo-1210273.jpeg);
+   // background-size: cover;
+   // background-color: tomato;
+
+  }
+
+ }
+ &__1{
+display: flex;
+color: white;
+min-width: 25.5%;
+// background-color: yellow;
+position: absolute;
+top: 123%;
+padding: 1rem;
+text-align: center;
+
+  &-1{
+   background-color: yellow;
+   color: black;
+  }
+  &-2{
+   background-color: green;
+  }
+  &-3{
+   background-color: orangered;
+  }
+
+ }
+ &__2{
+  // display: flex;
+  &-1{
+   flex: 1;
+  }
+  &-2{
+   flex: 1;
+  }
+ }
+}
+
+.card{
+max-width:85% ;
+// background-color: peru;
+margin: 0 auto;
+margin-top: 3rem;
+ &__heading{
+  margin-bottom: 2rem;
+  background-image: linear-gradient(to right,green,orangered);
+  // display: inline-block;
+  width: 40%;
+  letter-spacing: .2rem;
+  margin-left:auto;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-right:auto;
+  font-weight: 700;
+  text-align: center;
+  color: transparent;
+  -webkit-background-clip: text;
+ }
+ &__container{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+ }
+ &__1{
+  flex: 1;
+  max-width: 22%;
+  background-color: paleturquoise;
+  // padding-top: -2rem;
+  height: 55vh;
+  background-size: cover;
+  background-position: bottom;
+  box-shadow: 0 10px 20px black;
+  &-1{
+    border-top: 1px solid rgb(75, 75, 75);
+    background-image: url(/img/pexels-photo-3836087.jpeg);
+  }
+  &-2{
+   background-image: url(/img/pexels-photo-1200225.jpeg);
+  }
+  &-3{
+   background-image: url(/img/pexels-photo-733745.jpeg);
+  }
+  &-4{
+   border-top: 1px solid grey;
+   background-image: url(/img/nat-7.jpg);
+  }
+ }
+ &__p1{
+  padding: .5rem .5rem;
+  padding-bottom: 1.5rem;
+ }
+ &__p2{
+  color: gray;
+  margin-bottom: .5rem;
+  padding-left: .5rem;
+ }
+ &__pt{
+flex: 2;
+padding-top: 1rem;
+padding-bottom: .5rem;
+border-right: 2px solid grey;
+border-left:2px solid grey ;
+ }
+ &__flex{
+  display: flex;
+  text-align: center;
+ }
+ &__para{
+  background-color: white;
+  position: absolute;
+  top: 68%;
+  max-width: 22%;
+  // padding: 1rem;
+ }
+}
+.icon{
+ flex: 1;
+ // border-right: 2px solid gray;
+ // border-left: 2px solid gray;
+ padding-top: 1rem;
+ margin-bottom: 0;
+}
+.footer{
+ margin-top: 3rem;
+ padding:3rem 4rem; 
+ background-color: black;
+ display: flex;
+ color: rgb(250, 250, 128);
+ justify-content: space-between;
+ &__nav{
+  flex: 1;
+  max-width: 47%;
+  display: flex;
+  border-top: 1px solid rgb(247, 247, 106);
+  padding: 1.5rem;
+ }
+ &__item{
+flex: 1;
+ }
+ &__link{
+text-decoration: none;
+color: rgb(250, 250, 128);
+// background-color: rgb(211, 109, 49);
+padding:1rem;
+
+
+ }
+ &__content{
+  max-width: 47%;
+  
+flex: 1;
+border-top: 1px solid rgb(247, 247, 106);
+  padding: 1.5rem;
+ }
+ &__link:hover{
+  background-color: yellow;
+  color: black;
+ }
+}
